@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
+
 Route::get('/', function () {
     return Inertia::render('Index', [
         'appName' => config('app.name')
@@ -20,5 +21,6 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__ . '/auth.php';
-require __DIR__ . '/api.php';
+require_once __DIR__ . '/auth.php';
+require_once __DIR__ . '/api.php';
+require_once __DIR__ . '/dev.php';

@@ -2,8 +2,8 @@
     <Head>
         <title>Welcome</title>/
     </Head>
-    <div class="bg-black min-h-screen">
-        <span class="text-2xl text-white">Welcome to {{ appName }} </span>
+    <div>
+        <span class="text-2xl">Welcome to {{ appName }} </span>
     </div>
 </template>
 
